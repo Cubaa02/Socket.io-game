@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Socket.io Game</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Socket.io Game</h1>
+  </header>
+  <main>
+    <div>
+      <div id="leaderboard">
+        <div>Leaderboard</div>
+        <div id="playerLabels"></div>
+      </div>
+      <canvas></canvas>
+      <div id="usernameOverlay">
+        <form id="usernameForm">
+          <div>
+            <input id="usernameInput" type="text" placeholder="Username" />
+          </div>
+          <div>
+            <button type="submit">PLAY</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; Jakub Plucnar, SŠPU Opava 2024</p>
+  </footer>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js" integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+  <script src="./js/classes/Player.js"></script>
+  <script src="./js/classes/Projectile.js"></script>
+  <script src="./js/frontend.js"></script>
+  <script src="./js/eventListeners.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    background: #2b2b2b;
+    background: linear-gradient(90deg, rgb(44, 44, 58) 0%, rgb(26, 26, 48) 35%, rgb(8, 31, 54) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 185px;
+  }
+  
+  input::placeholder {
+    color: aliceblue;
+  }
+  
+  canvas {
+    width: 1024px;
+    height: 576px;
+    background-image: url(image.png);
+    background-color: black;
+  }
+  
+  #leaderboard {
+    position: absolute;
+    color: aliceblue;
+    padding: 8px;
+    font-family: sans-serif;
+    font-size: 14px;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+  }
+  
+  #leaderboard > div:first-child {
+    margin-bottom: 8px;
+  }
+  
+  #usernameOverlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  #usernameForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #usernameInput {
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    background: #2e886a;
+    color: aliceblue;
+  }
+  
+  #usernameForm button {
+    padding: 8px 20px;
+    border-radius: 100px;
+    border: none;
+    background-image: linear-gradient(to right, rgb(199, 42, 219), rgb(146, 8, 112));
+    color: aliceblue;
+    cursor: pointer;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 8px;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: aliceblue;
+    text-shadow: 2px 2px black;
+  }
+
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 8px;
+    font-family: sans-serif;
+    font-size: 48px;
+    color: aliceblue;
+    text-shadow: 10px 10px black;
+  }
+  
